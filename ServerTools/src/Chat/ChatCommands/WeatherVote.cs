@@ -38,9 +38,9 @@ namespace ServerTools
                     string _phrase933;
                     if (!Phrases.Dict.TryGetValue(933, out _phrase933))
                     {
-                        _phrase933 = "not enough players are online to start a weather vote.";
+                        _phrase933 = " not enough players are online to start a weather vote.";
                     }
-                    ChatHook.ChatMessage(_cInfo, ChatHook.Player_Name_Color + _cInfo.playerName  + _phrase933 + "[-]", _cInfo.entityId, LoadConfig.Server_Response_Name, EChatType.Whisper, null);
+                    ChatHook.ChatMessage(_cInfo, ChatHook.Player_Name_Color + _cInfo.playerName + LoadConfig.Chat_Response_Color + _phrase933 + "[-]", _cInfo.entityId, LoadConfig.Server_Response_Name, EChatType.Whisper, null);
                 }
             }
             else
@@ -48,9 +48,9 @@ namespace ServerTools
                 string _phrase824;
                 if (!Phrases.Dict.TryGetValue(824, out _phrase824))
                 {
-                    _phrase824 = "there is a vote already open.";
+                    _phrase824 = " there is a vote already open.";
                 }
-                ChatHook.ChatMessage(_cInfo, ChatHook.Player_Name_Color + _cInfo.playerName  + _phrase824 + "[-]", _cInfo.entityId, LoadConfig.Server_Response_Name, EChatType.Whisper, null);
+                ChatHook.ChatMessage(_cInfo, ChatHook.Player_Name_Color + _cInfo.playerName + LoadConfig.Chat_Response_Color + _phrase824 + "[-]", _cInfo.entityId, LoadConfig.Server_Response_Name, EChatType.Whisper, null);
             }
         }
 

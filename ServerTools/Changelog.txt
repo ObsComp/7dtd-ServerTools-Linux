@@ -2,8 +2,9 @@
 
 12.7 - Linux Version - Requires MySQL
 Stripped SqLite from ServerTools and recoded the internal operations for MySQL operations only
+Fixed Bounties repeating in chat
 Fixed /wallet response showing globally
-Fixed clan chat repeating based on how many members were in the clan online and global
+Fixed clan chat repeating based on how many members were in the clan online and showing in global chat
 
 12.7
 Fixed more chat responses showing global instead of private

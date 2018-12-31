@@ -167,10 +167,6 @@ namespace ServerTools
             {
                 UpdateSQL.Exec(_version);
             }
-            else
-            {
-                LoadProcess.Load(3);
-            }
         }
 
         public static void FastQuery(string _sql)

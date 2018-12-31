@@ -105,7 +105,11 @@ namespace ServerTools
                                         }
                                         if (Bounties.IsEnabled)
                                         {
-                                            Bounties.PlayerKilled(_player, _player2, _cInfo, _cInfo2);
+                                            Entity _target = _player2.GetDamagedTarget();
+                                            if (_target == _player && _player != _player2)
+                                            {
+                                                Bounties.PlayerKilled(_player, _player2, _cInfo, _cInfo2);
+                                            }
                                         }
                                     }
                                 }

@@ -30,10 +30,10 @@ namespace ServerTools
                 string _phrase14;
                 if (!Phrases.Dict.TryGetValue(14, out _phrase14))
                 {
-                    _phrase14 = "player {TargetName} was not found.";
+                    _phrase14 = " player {TargetName} was not found.";
                 }
                 _phrase14 = _phrase14.Replace("{TargetName}", _strings[0]);
-                ChatHook.ChatMessage(_cInfo, ChatHook.Player_Name_Color + _cInfo.playerName  + _phrase14 + "[-]", _cInfo.entityId, LoadConfig.Server_Response_Name, EChatType.Whisper, null);
+                ChatHook.ChatMessage(_cInfo, ChatHook.Player_Name_Color + _cInfo.playerName + LoadConfig.Chat_Response_Color + _phrase14 + "[-]", _cInfo.entityId, LoadConfig.Server_Response_Name, EChatType.Whisper, null);
             }
             else
             {
@@ -70,9 +70,9 @@ namespace ServerTools
                 string _phrase15;
                 if (!Phrases.Dict.TryGetValue(15, out _phrase15))
                 {
-                    _phrase15 = "no one has pm'd you.";
+                    _phrase15 = " no one has pm'd you.";
                 }
-                ChatHook.ChatMessage(_cInfo, ChatHook.Player_Name_Color + _cInfo.playerName  + _phrase15 + "[-]", _cInfo.entityId, LoadConfig.Server_Response_Name, EChatType.Whisper, null);
+                ChatHook.ChatMessage(_cInfo, ChatHook.Player_Name_Color + _cInfo.playerName + LoadConfig.Chat_Response_Color + _phrase15 + "[-]", _cInfo.entityId, LoadConfig.Server_Response_Name, EChatType.Whisper, null);
             }
             else
             {
@@ -83,9 +83,9 @@ namespace ServerTools
                     string _phrase16;
                     if (!Phrases.Dict.TryGetValue(16, out _phrase16))
                     {
-                        _phrase16 = "the player is not online.";
+                        _phrase16 = " the player is not online.";
                     }
-                    ChatHook.ChatMessage(_cInfo, ChatHook.Player_Name_Color + _cInfo.playerName  + _phrase16 + "[-]", _cInfo.entityId, LoadConfig.Server_Response_Name, EChatType.Whisper, null);
+                    ChatHook.ChatMessage(_cInfo, ChatHook.Player_Name_Color + _cInfo.playerName + LoadConfig.Chat_Response_Color + _phrase16 + "[-]", _cInfo.entityId, LoadConfig.Server_Response_Name, EChatType.Whisper, null);
                 }
                 else
                 {
